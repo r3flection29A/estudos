@@ -1,0 +1,44 @@
+<!--
+    <video>
+    
+    - src
+    - controls
+    - se não funcionar?
+        - fallback content
+    - source
+        - src
+        - type
+-->
+
+
+<video src="./exemplo/video.mp4"></video> <!-- não vai funcionar -->
+<video src="./exemplo/video.mp4" controls></video> <!-- forma certa -->
+
+<!--
+    e se mesmo assim não funcionar?
+-->
+
+<video src="./exemplo/video.mp4" controls>
+    <p>Video indisponível nesse browser. Baixe-o aqui. <a href=""></a></p>
+</video>
+
+<!--
+    source
+-->
+
+<video controls>
+    <source src="./exemplo/video.mp4" type="video/mp4">
+</video>
+
+
+<!--
+    mais tags
+-->
+
+<video controls
+    width="500"
+    height="400"
+    autoplay
+    preload="auto" 
+> 
+</video>
