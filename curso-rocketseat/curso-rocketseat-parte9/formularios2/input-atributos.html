@@ -1,0 +1,65 @@
+<!--
+    <input>
+    
+    Atributos Comuns
+    - type
+    - autocomplete
+    - autofocus
+    - disabled / readonly
+    - value
+    - form
+    - name 
+    - required (quase todos)
+    - placeholder (password, serach, tel, text, url)
+-->
+
+<!--
+    autocomplete => completa algo que já foi usado
+    várias vezes
+-->
+
+<input type="text" autocomplete="email">
+
+<!--
+    autofocus
+-->
+
+<input type="text" autofocus> <!-- apenas um por página -->
+
+<!--
+    disabled => desabilita o input
+-->
+
+<input type="text" disabled>
+
+<!--
+    value => valor do input
+-->
+
+<input type="text" value="Qualquer valor">
+
+<!--
+    form => linka com um formulário
+    name => nome do input
+-->
+
+<form action="" method="get" id="meu-form"></form>
+<input type="email" form="meu-form" name="email">
+
+<!--
+    required => input que é obrigatório pelo usuário
+-->
+
+<input type="text" required>
+
+<!--
+    placeholder => texto que fica atrás 
+-->
+
+<input type="text" placeholder="Digite seu email">
+
+<!-- não elimina o uso do label -->
+
+<label for="email">Email</label>
+<input type="email" id="email">
+

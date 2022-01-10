@@ -1,0 +1,112 @@
+<!--
+    <input type="url" />
+
+    - Espera que o usuário digite uma URL
+    - Irá validar se o valor digitado é uma URL
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+    - required
+    - minlenght / maxlenght 
+        * o mínimo e/ou máximo de caracteres que o campo irá cconter
+
+    - size 
+        * modifica o tamanho do campo de acordo com o valor númerico
+
+    - pattern 
+        * uso de expressão regular para validar o campo
+    
+    - list 
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré-definidos a fim
+        de sugerir ao usuário quais valores estão disponíveis
+             * os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados
+    
+    - spellcheck
+        * habilitar correção ortográfica
+-->
+
+<form action="" method="get">
+    <input type="url">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    placeholder
+-->
+
+<form action="" method="get">
+    <input type="url" placeholder="http://example.com">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    disabled
+-->
+
+<form action="" method="get">
+    <input type="url" disabled>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    required
+-->
+
+<form action="" method="get">
+    <input type="url" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    min/maxlenght
+-->
+
+<form action="" method="get">
+    <input type="url" minlength="20" maxlength="100">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    size
+-->
+
+<form action="" method="get">
+    <input type="url" size="30">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    pattern
+-->
+
+<form action="" method="get">
+    <input type="url" pattern=".\*.com\.br\/.*" title="Somente dominios .com.br"> <!-- somentes dominios .com.br -->
+</form>
+
+<!--
+    list
+-->
+
+<form action="" method="get">
+    <datalist id="listurls">
+        <option>https://google.com</option>
+    </datalist>
+    <input type="url" list="listurls">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    spellcheck
+-->
+
+<form action="" method="get">
+    <input type="email"
+     placeholder="https://example.com"
+     required
+     spellcheck="true" 
+    > <!-- pode ser false também -->
+</form>

@@ -1,0 +1,66 @@
+<!--
+    <textarea>
+    - mais de uma linha
+    - útil para textos grandes
+
+    # Atributos
+    - id
+    - name
+    - rows e cols
+    - maxlength e minlength 
+    - wrap
+    - outros comuns aos inputs
+        - autocomplete, autofocus, disabled, placeholder, readonly,
+        form, required
+-->
+
+<textarea>
+
+</textarea>
+
+<!--
+    id => identificar o textarea
+-->
+
+<label for="message">Envie sua dúvida:</label>
+<textarea id="message"></textarea>
+
+<!--
+    name => serve para quando enviarmos os dados pro backend
+-->
+<br>
+<br>
+
+<textarea name="message" id="message"></textarea>
+
+<!--
+    rows => linhas
+    cols => colunas
+-->
+<br>
+<br>
+<textarea name="message" id="message" cols="30" rows="10">
+
+</textarea>
+
+<!--
+    min/maxlength 
+-->
+<br>
+<br>
+
+<textarea minlength="2" maxlength="1000" name="message" id="message" cols="30" rows="10">
+
+</textarea>
+
+<!--
+    wrap => "embrulhado"
+    Ver no Preview HTLM ou pelo próprio browser
+-->
+<br>
+<br>
+
+<textarea wrap="off" name="message" id="message" cols="30" rows="10">
+
+</textarea>
+<!-- pode ser on, soft ou hard -->

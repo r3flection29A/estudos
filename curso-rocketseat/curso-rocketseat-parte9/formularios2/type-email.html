@@ -1,0 +1,110 @@
+<!--
+    <input type=email />
+
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+
+    - placeholder
+    - readonly/disabled
+    - value
+    - required
+    - multiple
+        * o campo irá receber 1 ou mais emails, separado por vírgulas
+
+    - minlenght / maxlenght 
+        * o mínimo e/ou máximo valor que o campo terá
+    
+    - size
+        * valor númerico indicando quantos caracteres esse
+
+    - pattern 
+        * uso de expressão regular para validação
+
+    - list 
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré-definidos a fim
+        de sugerir ao usuário quais valores estão disponíveis
+            * os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados
+-->
+
+<form action="" method="get">
+    <input type="email">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    placeholder
+-->
+
+<form action="" method="get">
+    <input type="email" placeholder="Email">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    disabled
+-->
+
+<form action="" method="get">
+    <input type="email" disabled>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    required
+-->
+
+<form action="" method="get">
+    <input type="email" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    multiple
+-->
+
+<form action="" method="get">
+    <input type="email" multiple>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    minlenght / maxlenght 
+-->
+
+<form action="" method="get">
+    <input type="email" minlength="8" maxlength="64">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    size
+-->
+
+<form action="" method="get">
+    <input type="email" size="50">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    pattern
+-->
+
+<form action="" method="get">
+    <input type="email" pattern=".+@rocketseat\.com\.br" title="Somente emails rocketseat.com.br"> <!-- expressão regular que só aceita o domínio da rocketseat -->
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    list 
+-->
+
+<form action="" method="get">
+    <datalist id="emailslist">
+        <option>exemplo@gmail.com</option>
+    </datalist>
+    <input type="email" list="emailslist">
+    <button type="submit">Enviar</button>
+</form>
